@@ -1,0 +1,11 @@
+[project]
+name = "cs-grad-notes"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.6",
+    "pymdown-extensions>=10.21.3",
+]

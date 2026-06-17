@@ -1,8 +1,48 @@
 site_name: 資工所備考筆記
-site_url: https://your-username.pages.dev
+site_url: https://cs-grad-notes.pages.dev
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/solid/trash
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+repo_url: https://gitlab.com/xDDoubleTea/cs-grad-notes
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.arithmatex:
+      generic: true
+
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - 首頁: index.md
@@ -11,3 +51,6 @@ nav:
       - Tree 家族: data-structures/trees.md
   - 演算法:
       - 圖論基礎: algorithms/graph-basics.md
+
+plugins:
+  - search
