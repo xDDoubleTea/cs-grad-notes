@@ -3,6 +3,9 @@ site_url: https://cs.hoshiyomi-dev.work
 
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
   icon:
     repo: fontawesome/solid/trash
   palette:
@@ -44,13 +47,24 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - 首頁: index.md
   - 資料結構:
       - Hashing: data-structures/hashing.md
-      - Tree 家族: data-structures/trees.md
+      - Tree: data-structures/trees.md
   - 演算法:
       - 圖論基礎: algorithms/graph-basics.md
+  - 離散數學:
+      - 生成函數: discrete-mathematics/generating-functions.md
+  - 線性代數:
+      - 向量空間: linear-algebra/vector-spaces.md
+  - 計算機結構:
+      - 效能評估: computer-architecture/performance.md
+  - 作業系統:
+      - 待補: operating-systems/idk.md
 
 plugins:
   - search

@@ -1,17 +1,4 @@
-# Welcome to MkDocs
+# 考資工所的神奇筆記東東
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+> 此筆記使用`mkdocs`並使用`cloudflare pages`來部屬
+> 因為`hackmd`跟`obsidian`都沒辦法達到我想要的功能所以就搞了這個

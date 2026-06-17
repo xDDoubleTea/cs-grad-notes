@@ -1,0 +1,70 @@
+.md-typeset .admonition.theorem,
+.md-typeset details.theorem {
+  border-color: #ffb74d;
+}
+
+.md-typeset .theorem>.admonition-title,
+.md-typeset .theorem>summary {
+  background-color: rgba(255, 183, 77, 0.1);
+}
+
+.md-typeset .theorem>.admonition-title::before,
+.md-typeset .theorem>summary::before {
+  background-color: #ffb74d;
+}
+
+.md-typeset .admonition.definition,
+.md-typeset details.definition {
+  border-color: #7e57c2;
+  background-color: rgba(126, 87, 194, 0.05);
+}
+
+.md-typeset .definition>.admonition-title,
+.md-typeset .definition>summary {
+  background-color: rgba(126, 87, 194, 0.1);
+}
+
+.md-typeset .definition>.admonition-title::before,
+.md-typeset .definition>summary::before {
+  background-color: #7e57c2;
+}
+
+.md-typeset .admonition.problem,
+.md-typeset details.problem {
+  border-color: #ef5350;
+  background-color: rgba(239, 83, 80, 0.05);
+}
+
+.md-typeset .problem>.admonition-title,
+.md-typeset .problem>summary {
+  background-color: rgba(239, 83, 80, 0.1);
+}
+
+.md-typeset .problem>.admonition-title::before,
+.md-typeset .problem>summary::before {
+  background-color: #ef5350;
+}
+
+.md-typeset .admonition.exercise,
+.md-typeset details.exercise {
+  border-color: #26a69a;
+  background-color: rgba(38, 166, 154, 0.05);
+}
+
+.md-typeset .exercise>.admonition-title,
+.md-typeset .exercise>summary {
+  background-color: rgba(38, 166, 154, 0.1);
+}
+
+.md-typeset .exercise>.admonition-title::before,
+.md-typeset .exercise>summary::before {
+  background-color: #26a69a;
+}
+
+pre,
+code,
+kbd,
+.md-typeset .admonition {
+  font-family:
+    'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', monospace !important;
+}
