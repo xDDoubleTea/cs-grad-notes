@@ -1,0 +1,13 @@
+site_name: 資工所備考筆記
+site_url: https://your-username.pages.dev
+
+theme:
+  name: material
+
+nav:
+  - 首頁: index.md
+  - 資料結構:
+      - Hashing: data-structures/hashing.md
+      - Tree 家族: data-structures/trees.md
+  - 演算法:
+      - 圖論基礎: algorithms/graph-basics.md
