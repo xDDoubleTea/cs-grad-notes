@@ -59,12 +59,12 @@ nav:
       - 圖論基礎: algorithms/graph-basics.md
   - 離散數學:
       - 生成函數: discrete-mathematics/generating-functions.md
-  - 線性代數:
-      - 向量空間: linear-algebra/vector-spaces.md
   - 計算機結構:
       - 效能評估: computer-architecture/performance.md
   - 作業系統:
       - 待補: operating-systems/idk.md
+  - ...
 
 plugins:
   - search
+  - awesome-pages
