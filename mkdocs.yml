@@ -54,18 +54,18 @@ extra_css:
 
 nav:
   - 首頁: index.md
-  - 筆記:
-      - 資料結構:
-          - Hashing: data-structures/hashing.md
-          - Tree: data-structures/trees.md
-      - 演算法:
-          - 圖論基礎: algorithms/graph-basics.md
-      - 離散數學:
-          - 生成函數: discrete-mathematics/generating-functions.md
-      - 計算機結構:
-          - 效能評估: computer-architecture/performance.md
-      - 作業系統:
-          - 待補: operating-systems/idk.md
+  - 資料結構:
+      - Hashing: data-structures/hashing.md
+      - Tree: data-structures/trees.md
+  - 演算法:
+      - 圖論基礎: algorithms/graph-basics.md
+  - 離散數學:
+      - 生成函數: discrete-mathematics/generating-functions.md
+  - 計算機結構:
+      - 效能評估: computer-architecture/performance.md
+  - 作業系統:
+      - 待補: operating-systems/idk.md
+  - 線性代數:
       - ...
 
 plugins:
