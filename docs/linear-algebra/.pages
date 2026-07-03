@@ -1,7 +1,7 @@
 title: 線性代數
 arrange:
   - vector-spaces.md
-  - inner-products.md
+  - inner-products-norms.md
   - svd.md
   - subspaces.md
   - important-subspaces.md

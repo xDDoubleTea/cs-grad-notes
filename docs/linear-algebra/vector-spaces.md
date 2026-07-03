@@ -42,7 +42,8 @@
     Reqires same conditions except that $F$ can be a ring.
 
 
-???+ example "Examples of vector spaces"
+## Examples
+???+ example 
 
     Assume that the following uses component wise addition and component wise scalar multiplication.
 
