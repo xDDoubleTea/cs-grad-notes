@@ -1,5 +1,13 @@
 # Overview
 
+## 作業系統是什麼？
+
+- `User space applications`跟`Hardware`的溝通橋樑`(via ABI)`
+- Resource management
+    - CPU scheduling
+    - Memory management
+    - File systems
+
 ## 為何要有作業系統？
 
 ### Batch
@@ -14,6 +22,7 @@
 
 ### Multi-programming
 
+#### Spooling (Simultaneous Peripheral Operation On-Line)
 
 ### Time-sharing
 
@@ -26,3 +35,4 @@
 
 
 > Linux只是一個kernel，要加上`user space programs`，如`file manager, terminal emulator, desktop environment`才算是完整的作業系統
+

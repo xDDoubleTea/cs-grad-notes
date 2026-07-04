@@ -79,7 +79,62 @@
     Additionally, given $k\in\mathbb{Z}_{\ge0}$, $\mathsf{P}_k(F)$ is the set that contains all polynomials with degree less or equal to $k$, and inherits the addition and scalar multiplication from $\mathsf{P}(F)$, which becomes a vector space over $F$, and is a subspace of $\mathsf{P}(F)$.
 
 ??? example "Sequences"
-???+ example "Functions"
+
+    Let $F$ be a field. Let $V:=\{\{a_n\}_{n=1}^{\infty}:a_n\in F\}$, the set of all sequences in $F$.
+
+    Define addition $\{a_n\}_{n=1}^{\infty}+\{b_n\}_{n=1}^{\infty}:=\{a_n+b_n\}_{n=1}^{\infty}$.
+
+    Define scalar multiplication $c\{a_n\}_{n=1}^{\infty}:=\{ca_n\}_{n=1}^{\infty}$.
+
+    Then $V$ is a vector space over $F$.
+
+    ??? example "Usage"
+
+        Let $\{f_n\}_{n=0}^{\infty}$ be the fibonacci sequence, i.e., $f_0=0,f_1=1$ and $f_{n}=f_{n-1}+f_{n-2}$ for $n\ge 2$.
+
+        Let $W\subset V$ be defined by
+        
+        $$
+        W:=\{\{w_n\}\,\mid\,w_n=w_{n-1}+w_{n-2},w_0,w_1\in\mathbb{R}\}
+        $$
+
+        Then it is a subspace of $V$. $\dim(W)=2$ because it is isomorphic to $\mathbb{R}^2$ by sending $w_0$ to $a_1$, $w_1$ to $a_2$ for all $\{w_n\}\in W,(a_1,a_2)\in\mathbb{R}^2$, for example.
+        
+        Therefore, the linearly independent set $\left\{\{\varphi^n\}_{n=0}^{\infty},\left\{\left(\dfrac{1}{\varphi}\right)^n\right\}_{n=0}^{\infty}\right\}\subset W$ spans $W$, where $\varphi=\frac{1+\sqrt{5}}{2}$. 
+    
+        Hence, we can find unique $\alpha,\beta\in\mathbb{R}$, such that
+
+        $$
+        \alpha\varphi^n+\beta\frac{1}{\varphi^n}=f_n
+        $$
+        
+        for all $n\in\mathbb{N}$. Specifically, we can solve the equations
+
+        $$
+        \begin{cases}
+        \alpha+\beta&=f_0\\
+        \alpha\varphi+\frac{\beta}{\varphi}&=f_1
+        \end{cases}
+        $$
+
+        and we obtain the Binet's formula:
+
+        $$
+        f_n=\frac{1}{\sqrt{5}}\left(\varphi^{n}-\frac{1}{\varphi^n}\right).
+        $$
+
+    !!! note
+        The sequence space is useful for solving *homogeneous recurrence sequences*, in fact, the closed form formula of recurrence relations is related to the Jordan normal form of $A$ when solving for
+
+        $$
+        \begin{pmatrix}a_{n+k}\\a_{n+k-1}\\\vdots\\a_{n}\end{pmatrix}=A^n\begin{pmatrix}a_{k}\\a_{k-1}\\\vdots\\a_{1}\end{pmatrix}.
+        $$
+        
+        This is why they are in a linear combination of geometric series, and the ratio may be complex numbers (irrational numbers) even if the original sequence is real (positive integers).
+        
+        
+
+??? example "Functions"
     Let $S$ be a nonempty set and $F$ be a field. Let
 
     $$
