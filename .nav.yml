@@ -1,0 +1,8 @@
+nav:
+  - 首頁: index.md
+  - 資料結構: data-structures
+  - 演算法: algorithms
+  - 離散數學: discrete-mathematics
+  - 計算機結構: computer-architecture
+  - 作業系統: operating-systems
+  - 線性代數: linear-algebra

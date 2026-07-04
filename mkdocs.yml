@@ -52,22 +52,6 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
 
-nav:
-  - 首頁: index.md
-  - 資料結構:
-      - Hashing: data-structures/hashing.md
-      - Tree: data-structures/trees.md
-  - 演算法:
-      - 圖論基礎: algorithms/graph-basics.md
-  - 離散數學:
-      - 生成函數: discrete-mathematics/generating-functions.md
-  - 計算機結構:
-      - 效能評估: computer-architecture/performance.md
-  - 作業系統:
-      - 總覽: operating-systems/overview.md
-  - 線性代數:
-      - ...
-
 plugins:
   - search
   - awesome-pages
