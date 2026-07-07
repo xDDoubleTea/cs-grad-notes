@@ -9,4 +9,5 @@ dependencies = [
     "mkdocs-awesome-pages-plugin>=2.10.1",
     "mkdocs-material>=9.7.6",
     "pymdown-extensions>=10.21.3",
+    "zensical>=0.0.47",
 ]
