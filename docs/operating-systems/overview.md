@@ -10,7 +10,6 @@
 
 ## 為何要有作業系統？
 
-### Batch
 
 優點：簡單直觀
 
@@ -20,11 +19,7 @@
 
 於是人們開始思考如何降低`CPU`的`idle`時間
 
-### Multi-programming
-
-#### Spooling (Simultaneous Peripheral Operation On-Line)
-
-### Time-sharing
+### Spooling (Simultaneous Peripheral Operation On-Line)
 
 ## 作業系統例子
 
@@ -35,4 +30,3 @@
 
 
 > Linux只是一個kernel，要加上`user space programs`，如`file manager, terminal emulator, desktop environment`才算是完整的作業系統
-
