@@ -7,7 +7,7 @@ Prevents user programs to break computer by executing bad instructions
 ## Dual-Mode Operation
 
 - User mode
-- Kernel mode
+- Kernel mode (Monitor mode)
 
 !!! example "User mode vs Kernel mode applications"
 
@@ -18,6 +18,3 @@ Prevents user programs to break computer by executing bad instructions
         - Drivers
         - File system
         - Memory manager
-
-
-
