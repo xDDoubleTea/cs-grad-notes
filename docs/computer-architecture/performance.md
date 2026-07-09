@@ -21,31 +21,16 @@
         \dfrac{\text{Performance}_X}{\text{Performance}_Y}=\dfrac{\text{Latency}_Y}{\text{Latency}_X}=n
         $$
 
-    !!! definition "CPU time"
-        
-        $$
-        \text{CPU time}=\text{CPU clock cycle}\times\text{Clock cycle time}
-        $$
+## CPI
 
-    !!! definition "CPI (Cycles per instruction)"
-        
-        $$
-        \text{CPI}=\dfrac{\text{Total Cycles}}{\text{Total instructions}}
-        $$
-
-    !!! theorem "CPU time"
-        
-        $$
-        \text{CPU time}=\text{Instruction count}\times\text{CPI}\times\text{Clock cycle time}
-        $$
-
+[CPI](./cpi.md)
 
 ## Amdahl's law
 
 ???+ theorem "Amdahl's Law"
 
     $$
-    \text{Latency}'=\dfrac{\text{Latency}_s}{F}+\text{Latency_n}
+    \text{Latency}'=\dfrac{\text{Latency}_s}{F}+\text{Latency}_n
     $$
     
 

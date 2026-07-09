@@ -17,24 +17,35 @@
 
 **每週OS進度**：
 
-* **Week 1 (7/8 - 7/12)：基礎架構與行程**
-* **範圍**：1. Overview (收尾), 2. Processes and Threads, 3. Multithreaded Programming。
-* **執行重點**：這部分與 C/C++ 低階開發及 Linux 伺服器運作邏輯高度重疊。不需死記硬背，將重點放在 Context Switch 流程、User/Kernel thread 差異與 Pthread 概念即可快速通過。
+
+**作息與策略微調：**
+
+* **數學時段**：全面轉為「純刷題與勘誤」，不需再看理論。
+* **本週日 (7/12) 晚上**：處理完通識後，直接翻開《金寶典》，把 Process（行程）章節的題目速刷過去，驗證你的直覺。
+
+---
+
+* **Week 2 (7/13 - 7/19)：記憶體管理（提早迎戰大魔王）**
+* **OCW 對應**：第10講 ~ 第14講。
+* **範圍**：Ch8 Memory Management, Ch9 Virtual Memory Management。
+* **執行重點**：這兩章是資工所計算題的重頭戲。理解 Logical 轉 Physical Address 的底層硬體機制（TLB 查表）。不要背公式，用你對陣列（Array）與指標（Pointer）在實體 RAM 中如何存放的直覺，去推導 Paging 與 Segmentation 的計算題。熟練 Page Replacement 演算法。
 
 
-* **Week 2 (7/13 - 7/19)：排班演算法**
-* **範圍**：4. Process Scheduling。
-* **執行重點**：完全聚焦於計算題。熟練 FCFS、SJF、SRTF、RR 等演算法的 Gantt Chart 繪製，並精準計算 Waiting time 與 Turnaround time。
+* **Week 3 (7/20 - 7/26)：執行緒與排班**
+* **OCW 對應**：第15講 ~ 第18講前半。
+* **範圍**：Ch4 Multithreaded Programming, Ch5 Process Scheduling。
+* **執行重點**：Threads 的概念你已經懂了，影片可 2.0 倍速掃過。把精力集中在 Ch5 各種排班演算法（FCFS, SJF, SRTF, RR）的 Gantt Chart 繪製與時間計算。
 
 
-* **Week 3 (7/20 - 7/26)：行程同步（最重要章節）**
-* **範圍**：5. Process Synchronization。
-* **執行重點**：資工所必考核心。理解 Critical Section 問題，熟練 Semaphore 與 Monitor 的運作機制，並務必看懂 Reader-Writer 與 Dining-Philosophers 等經典同步問題的程式碼邏輯。
+* **Week 4 (7/27 - 8/2)：行程同步（最核心考點）**
+* **OCW 對應**：第18講後半 ~ 第21講。
+* **範圍**：Ch6 Process Synchronization。
+* **執行重點**：這週只有一章，因為它是 OS 最難的章節。遇到 Semaphore 與 Monitor 的虛擬碼時，想像你自己正在寫這支 C 程式，如果不加鎖會發生什麼 Race Condition。把 Reader-Writer 問題的底層邏輯推演到爛熟。
 
 
-* **Week 4 (7/27 - 8/2)：死結**
-* **範圍**：6. DeadLocks。
-* **執行重點**：記熟 Deadlock 四大必要條件與對應的處理策略（Prevention, Avoidance, Detection）。熟練 Banker's Algorithm 的矩陣計算以判斷 Safe State。
+
+
+
 
 
 ---
@@ -55,21 +66,25 @@
 
 **每週OS進度**：
 
-* **Week 5 (8/3 - 8/9)：實體記憶體管理**
-* **範圍**：7. Memory Management Strategies。
-* **執行重點**：理解 External/Internal Fragmentation 的差異。重點學習 Paging 與 Segmentation 的位址轉換（Logical to Physical address）機制與計算。
+* **Week 5 (8/3 - 8/9)：死結與檔案系統介面**
+* **OCW 對應**：第22講 ~ 第23講前半。
+* **範圍**：Ch7 Deadlocks, Ch10 File System Interface。
+* **執行重點**：Deadlock 直接專注於 Banker's Algorithm 的矩陣計算。檔案系統介面與你平常在 Linux 終端機下指令（如 `chmod`, `ln`）的邏輯完全一樣，快速帶過。
 
 
-* **Week 6 (8/10 - 8/16)：虛擬記憶體管理**
-* **範圍**：8. Virtual-Memory Management。
-* **執行重點**：熟練 Page Replacement 演算法（FIFO, LRU, Optimal）的 Page fault 計算。掌握 Thrashing 的成因與 EMAT (Effective Memory-Access Time) 的機率計算公式。
+* **Week 6 (8/10 - 8/16)：檔案系統實作**
+* **OCW 對應**：第23講後半 ~ 第25講前半。
+* **範圍**：Ch11 File System Implementation。
+* **執行重點**：重點掌握 Inode 的多層級索引結構（這也是計算題考點），以及磁碟空間的配置方法（Contiguous, Linked, Indexed）。
 
 
-* **Week 7 (8/17 - 8/23)：檔案系統**
-* **範圍**：9. File System, 10. Implementing File Systems。
-* **執行重點**：將這兩章與你平時使用 Yazi 及 Vim 操作 Linux 檔案系統的經驗結合。重點掌握 Inode 結構、檔案配置方法（Contiguous, Linked, Indexed）的優缺點比較。
+* **Week 7 (8/17 - 8/23)：磁碟陣列與 I/O 系統**
+* **OCW 對應**：第25講後半 ~ 第26講。
+* **範圍**：Ch12 Mass Storage System, Ch13 I/O Systems。
+* **執行重點**：專注於磁碟排班演算法（SSTF, SCAN 等）的磁軌移動計算，以及理解 RAID 0 到 RAID 6 各自解決了什麼效能或備份問題。
 
 
-* **Week 8 (8/24 - 8/31)：磁碟與 I/O**
-* **範圍**：11. Secondary-Storage Structure, 12. I/O Systems, Case Studies: Linux。
-* **執行重點**：11 章專注於磁碟排班演算法（FCFS, SSTF, SCAN, C-SCAN）的軌跡計算。12 章理解 DMA 與 Interrupt 運作。Linux 案例分析直接當作整門課的架構複習。
+* **Week 8 (8/24 - 8/31)：全局壓縮與綜合刷題**
+* **OCW 對應**：無新進度。
+* **範圍**：全範圍綜合題庫。
+* **執行重點**：不再分章節刷題，直接寫《金寶典》最後的跨章節大題。用「極限限制」的反向工程思維，把 OS 從頭到尾的邏輯串接成一張完整的地圖。
