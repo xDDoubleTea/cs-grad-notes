@@ -60,7 +60,10 @@
 
 ## Why?
 
+> Because
 
+
+計算的時候把好算的放一堆乘在一起會更快
 
 
 ## Some techniques
