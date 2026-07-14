@@ -68,6 +68,10 @@ Every processes are called threads on linux!!
     - 用一個instruction把所有的register存好
     - *multiple sets of registers*
 
+!!! note
+
+    - Context switch is slow
+
 
 ## Process Creation
 

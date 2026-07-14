@@ -68,7 +68,77 @@ $$
 ## Implementation of page table
 
 
-### Page table base register
+### Page table base register (PTBR)
+
+- The **Physical memory address** of the page table
+- The PTBR value is stored in the **PCB** of a process
+- Need to change the value of PTBR during **Context switch** 
+
+!!! note
+
+    - With PTBR only, each memory reference results in $2$ memory reads
+    - Use a cache ([TLB](#translation-look-aside-buffers-tlb)) to speed up the common case
+    - PTBR and TLB are hardware implementations
+
+
+### Translation Look-aside Buffers (TLB)
+
+- Implemented by **Associative memory** (can do parallel search)
+- **A cache for page table shared by all processes** 
+- TLB must be flushed after a context switch
+    - Otherwise, TLB entry must has a PID field (address-space identifiers (ASIDs))
+    - Mostly just flushes everything, because the modern process uses a lot of memory so that the TLB is basically full after context switch
+
+
+
+### Effective Memory-Access Time
+
+$$
+\begin{cases}
+r=\text{TLB hit rate}\\
+T_s=\text{TLB search time}\\
+T_M=\text{Memory access time}
+\end{cases}
+$$
+
+
+$$
+\text{EMAT}=r(T_s+T_M)+(1-r)\times(T_s+2T_M)
+$$
+
+!!! note
+
+    - The modern TLB hit-ratio can be up to $98\%$, because usually the memory access has locality, and a page has $4$ KB
+
+> vs. [AMAT](../../computer-architecture/memory-hierarchy/#amat)
+
+## Memory protection
+
+- Each page is associated with a set of **protection bit** in the page table
+
+!!! example "Valid-invalid bit"
+    - Valid: the page/frame is **in the process' logical address space** 
+    - Invalid: well, it is not Valid
+
+    !!! note "Issues"
+        - Un-used page entry cause memory waste
+        - The process may not access the memory on the boundary of a page
+
+    !!! note "Solutions"
+        - Use a page table length register (PTLR)
+        - Use memory limit register
+
+## Shared pages
+
+- Paging allows processes share common code, which must be **reentrant** 
+- **Only one copy** of the shared code needs to be kept in physical memory
+- **Two (several) virtual addresses** are mapped to one physical address
+
+### Reentrant code (pure code)
+
+- Never change during execution
+- Text editors, compilers, web servers, etc...
+
 
 
 
