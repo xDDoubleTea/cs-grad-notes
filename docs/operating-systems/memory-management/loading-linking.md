@@ -25,9 +25,3 @@
 - Linking postponed until runtime
 
 - Only one code copy in memory and shared by everyone
-
-
-
-
-
-
