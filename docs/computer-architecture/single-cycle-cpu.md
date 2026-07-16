@@ -35,20 +35,33 @@
 
 ## Components
 
-- ALU
-- PC
-- Adder
-- Register file
-- Instruction memory
-- Data memory
-- Control signals
-- Sign extension unit
+- [ALU](./alu.md)
+- PC: Program counter, points to the next instruction to be executed
+- Adder: increments or decrements the PC
+- Register file: where the registers live
+- Instruction memory: stores instructions 啊不然勒
+- Data memory: stores data 啊不然勒
+- Control signals: control behaviour of ALU and read write paths
+- Sign extension unit: ALU needs unsigned 32 bit numbers, whether to do subtraction is controlled by ALUOp
 
 
 
 ## Control Signals
 
+- `Branch`
+- `MemRead`
+- `MemtoReg`
+- `ALUOp`
+- `MemWrite`
+- `ALUSrc`
+- `RegWrite`
 
+!!! note "RISC-V and MIPS architecture difference"
+
+    MIPS: needs additional `RegDst` control signal to indicate which register to write to
+
+    * R-type: the destination is called `rd`
+    * I-type: the destination is called `rt`
 
 
 

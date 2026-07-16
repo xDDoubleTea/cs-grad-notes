@@ -43,6 +43,7 @@ $$
 \text{Physical addr}=p+d
 $$
 
+
 ### How to allocate frame
 
 - Maintain a *free-frame list*
