@@ -13,7 +13,18 @@
     \end{cases}
     $$
 
-    Also call $T$ a linear map, or $T$ is linear.
+    Also call $T$ a linear map, or $T$ is linear. It is also called a homomorphism between vector spaces $V$ and $W$.
+
+???+ theorem
+
+    Let $V$ and $W$ be vector spaces over $F$. The set
+
+    $$
+    Hom(V,W):=\{T:V\to W\mid T\text{ is linear}\}
+    $$
+
+    is a vector space over $F$.
+    
 
 !!! definition "Range and kernel"
     
@@ -49,7 +60,13 @@
     4. If $S\subset V$ is a set and $T(S)$ is linearly independent, then $S$ is a linearly independent set in $V$.
     5. If $\beta$ is a basis for $V$ and $\dim(W)=\dim(V)$, then $T(\beta)$ is a basis for $W$.
     6. $\mathsf{R}(T)$ and $\mathrm{ker}(T)$ are subspaces of $W$ and $V$, respectively.
+    7. If $U:V\to W$ is linear, then $T+U$ is also linear.
+    8. $\alpha T$ is linear, for any $\alpha\in F$.
     
+???+ theorem "Basis preservation"
+    
+    Let $T$ be a linear transformation from vector spaces $V$ to $W$.
+
 
 !!! example 
     

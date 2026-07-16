@@ -27,12 +27,25 @@
 ## Protection and Sharing
 
 - Protection bits associated with segments
+    - Readonly segment (code)
+    - Read-write segments (data,heap,stack)
+
 - Code sharing occurs at **segment level** 
     - **Shared memory communication** 
     - **Shared library**
 
 
 
+
+
+## Segmentation with Paging
+
+- Apply **segmentation** in logical address space 
+- Apply **paging** in physical address space
+
+### Address Translation
+
+- CPU generates logical address
 
 
 
