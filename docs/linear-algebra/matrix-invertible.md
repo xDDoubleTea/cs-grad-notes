@@ -25,3 +25,15 @@
     $$
     (I-A)^{-1}=\sum_{n=0}^{\infty}A^n
     $$
+
+    如果$A$可以分塊成
+
+    $$
+    A=\begin{pmatrix}X & Y \\ P & Q\end{pmatrix}
+    $$
+
+    並且$X,Y,P,Q$都是方陣，那麼
+
+    $$
+    A^{-1}=\begin{pmatrix}Q&-Y\\-P&X\end{pmatrix}
+    $$

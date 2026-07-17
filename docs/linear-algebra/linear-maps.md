@@ -55,17 +55,16 @@
     Let $T$ be a linear transformation from vector spaces $V$ to $W$.
 
     1. $T(0_V)=0_W$
-    2. If $S$ is a linearly independent set in $V$ and $|S|\le\dim(W)$, then $T(S)$ is a linearly independent set in $W$.
-    3. If $S$ is a linearly independent set in $V$ and $|S|>\dim(W)$, then $T(S)$ is a linearly dependent set in $W$.
-    4. If $S\subset V$ is a set and $T(S)$ is linearly independent, then $S$ is a linearly independent set in $V$.
-    5. If $\beta$ is a basis for $V$ and $\dim(W)=\dim(V)$, then $T(\beta)$ is a basis for $W$.
-    6. $\mathsf{R}(T)$ and $\mathrm{ker}(T)$ are subspaces of $W$ and $V$, respectively.
-    7. If $U:V\to W$ is linear, then $T+U$ is also linear.
-    8. $\alpha T$ is linear, for any $\alpha\in F$.
+    2. $\mathsf{R}(T)$ and $\mathrm{ker}(T)$ are subspaces of $W$ and $V$, respectively.
+    3. If $U:V\to W$ is linear, then $T+U$ is also linear.
+    4. $\alpha T$ is linear, for any $\alpha\in F$.
+    5. $\ker{T}=\{0\}$ if and only if $T$ is injective.
     
 ???+ theorem "Basis preservation"
     
-    Let $T$ be a linear transformation from vector spaces $V$ to $W$.
+    Let $T$ be an invertible linear transformation from vector spaces $V$ to $W$ and let $S_1,S_2$ be bases for $V,W$ respectively.
+    
+    $S_1$ is a basis for $V$ if and only if $S_2$ is a basis for $W$.
 
 
 !!! example 
