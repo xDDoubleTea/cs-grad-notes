@@ -72,11 +72,11 @@
 
             - **Time Complexity**
 
-                對半切再合起來就是$T(n)=2T(n/2)+f(n)$，合併用的算法是線性所以$f(n)=O(n)$，長得跟mergesort一模一樣所以就是$O(n\log n)$
+                對半切再合起來就是$T(n)=2T(n/2)+f(n)$，合併用的算法是線性所以$f(n)=\Theta(n)$，長得跟mergesort一模一樣所以就是$\Theta(n\log n)$
 
             - **Space Complexity**
 
-                需要function call，function call裡面用到常數資源（`leftSum, rightSum, i, mid, sum, maxLend, maxRend`），function call不重疊，所以總共就是$O(\log n)$
+                需要function call，function call裡面用到常數資源（`leftSum, rightSum, i, mid, sum, maxLend, maxRend`），function call不重疊，所以總共就是$\Theta(\log n)$
 
     !!! solution "Dynamic programming"
 
