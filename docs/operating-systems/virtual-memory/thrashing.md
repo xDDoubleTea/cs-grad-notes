@@ -25,7 +25,7 @@ $D>m$那麼就會thrashing，所以得殺掉一些人
 
 $D<<m$那就一堆frame沒用到，可以把degree of MP增加
 
-> 太貴了！
+> Minecraft once said : 太貴了！
 
 
 
