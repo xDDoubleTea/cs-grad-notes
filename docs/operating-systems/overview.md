@@ -2,14 +2,13 @@
 
 ## 作業系統是什麼？
 
-- `User space applications`跟`Hardware`的溝通橋樑`(via ABI)`
+- Software abstraction layer of hardware
 - Resource management
-    - CPU scheduling
-    - Memory management
-    - File systems
+  - CPU scheduling
+  - Memory management
+  - File systems
 
 ## 為何要有作業系統？
-
 
 優點：簡單直觀
 
@@ -27,6 +26,5 @@
 - OSX
 - OpenBSD
 - Arch linux
-
 
 > Linux只是一個kernel，要加上`user space programs`，如`file manager, terminal emulator, desktop environment`才算是完整的作業系統
