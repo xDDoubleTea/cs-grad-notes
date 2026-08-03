@@ -1,0 +1,26 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Build site
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv sync --dev
+          ./patch_links.sh
+          zensical build --clean
+
+      - name: Deploy to Cloudflare Pages
+        run: |
+          npx wrangler pages deploy ./site --project-name=cs-grad-gitea
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
