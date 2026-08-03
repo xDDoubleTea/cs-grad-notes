@@ -17,7 +17,7 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           uv sync --dev
           ./patch_links.sh
-          zensical build --clean
+          uv run zensical build --clean
 
       - name: Deploy to Cloudflare Pages
         run: |
