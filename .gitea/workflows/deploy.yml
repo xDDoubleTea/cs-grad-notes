@@ -7,7 +7,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -16,12 +16,11 @@ jobs:
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           uv sync --dev
-          ./patch_links.sh
           uv run zensical build --clean
 
       - name: Deploy to Cloudflare Pages
         run: |
-          npx wrangler pages deploy ./site --project-name=cs-grad-gitea
+          npx wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

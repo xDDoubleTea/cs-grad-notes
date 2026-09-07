@@ -12,4 +12,4 @@ title: 首頁
 ---
 
 > 圖床測試
-> ![windows7](https://nextcloud-public.hoshiyomi-dev.work/s/TBzKSGs8cABynin/download)
+> ![windows7](https://assets.hoshiyomi-dev.work/windows-7-スタートボタン-start-menu-microsoft-microsoft-610c307e3535e68f395524dc332d0abb.png)
