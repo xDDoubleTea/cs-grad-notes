@@ -1,3 +1,4 @@
 name = "cs-grad-gitea-worker"
+compatibility_date = "2026-09-03"
 [assets]
 directory = "./site"
