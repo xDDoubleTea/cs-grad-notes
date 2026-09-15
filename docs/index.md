@@ -11,5 +11,5 @@ title: 首頁
 
 ---
 
-> 圖床測試
-> ![windows7](https://assets.hoshiyomi-dev.work/windows-7-スタートボタン-start-menu-microsoft-microsoft-610c307e3535e68f395524dc332d0abb.png)
+> Cloudflare R2 圖床測試
+> ![nozomi](https://assets.hoshiyomi-dev.work/nozomi.jpg)
