@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+/src/operating-systems/hello_nostdio
+/src/operating-systems/mmf
+/src/operating-systems/process
